@@ -143,13 +143,9 @@ footer {
   .second-line {
     padding: 0;
   }
-
-  .profile {
-    margin-left: 25%;
-  }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 470px) {
   .name {
     font-size: 2rem;
   }
