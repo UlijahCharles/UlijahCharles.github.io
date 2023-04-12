@@ -40,7 +40,7 @@ hr {
 .profile {
   margin-top: 10%;
   margin-left: 20%;
-  width: 250px;
+  width: 400px;
   border-radius: 12px;
   box-shadow: 0px 3px 6px black;
 }
@@ -77,6 +77,18 @@ li > p {
   padding-left: 10px;
 }
 
+.project-list {
+  list-style: none;
+}
+
+.project-li {
+  width: 500px;
+}
+
+.project-link {
+  text-align: center;
+}
+
 .contacts {
   background-color: #212121;
 }
@@ -94,8 +106,17 @@ footer {
   text-align: center;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (max-width: 991px) {
+  h1 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .profile {
     width: 350px;
+  }
+  .name p {
+    padding-top: 10%;
   }
 }
