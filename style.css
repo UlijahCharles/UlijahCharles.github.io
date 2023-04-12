@@ -125,6 +125,10 @@ footer {
   .profile {
     width: 30vh;
   }
+
+  h1 {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 500px) {
