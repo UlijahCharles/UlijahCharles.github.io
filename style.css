@@ -9,7 +9,7 @@ body {
   font-weight: 600;
   text-shadow: 1px 1.5px 3px gray;
   margin-right: 50px;
-  width: 440px;
+  width: 25vh;
 }
 
 .intro {
@@ -83,16 +83,16 @@ li > p {
 }
 
 .project-li {
-  width: 400px;
+  width: 25vh;
 }
 
 .project-link {
   text-align: center;
-  width: 400px;
+  width: 25vh;
 }
 
 .preview-image {
-  width: 400px;
+  width: 25vh;
 }
 
 .contacts {
@@ -112,21 +112,33 @@ footer {
   text-align: center;
 }
 
-@media screen and (max-width: 991px) {
-  h1 {
-    text-align: center;
-  }
-}
-
 @media screen and (max-width: 767px) {
-  .profile {
-    width: 350px;
-  }
   .name p {
     padding-top: 10%;
   }
 
   .nav-link {
     margin-right: 0;
+  }
+}
+@media screen and (max-width: 580px) {
+  .profile {
+    width: 30vh;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navbar-brand {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .profile {
+    margin-left: 5%;
+  }
+
+  .name {
+    font-size: 2rem;
   }
 }
