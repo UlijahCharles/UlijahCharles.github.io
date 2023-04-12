@@ -135,13 +135,21 @@ footer {
   .navbar-brand {
     margin: 0 auto;
   }
+
+  .first-line {
+    padding: 0;
+  }
+
+  .second-line {
+    padding: 0;
+  }
+
+  .profile {
+    margin-left: 25%;
+  }
 }
 
 @media screen and (max-width: 400px) {
-  .profile {
-    margin-left: 5%;
-  }
-
   .name {
     font-size: 2rem;
   }
