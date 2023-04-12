@@ -9,6 +9,7 @@ body {
   font-weight: 600;
   text-shadow: 1px 1.5px 3px gray;
   margin-right: 50px;
+  width: 440px;
 }
 
 .intro {
@@ -82,11 +83,16 @@ li > p {
 }
 
 .project-li {
-  width: 500px;
+  width: 400px;
 }
 
 .project-link {
   text-align: center;
+  width: 400px;
+}
+
+.preview-image {
+  width: 400px;
 }
 
 .contacts {
@@ -118,5 +124,9 @@ footer {
   }
   .name p {
     padding-top: 10%;
+  }
+
+  .nav-link {
+    margin-right: 0;
   }
 }
