@@ -9,13 +9,13 @@ body {
 }
 
 .navbar-nav {
-  text-align: center;
+  margin: auto 37%;
 }
 .nav-link {
   color: black;
   font-weight: 600;
   text-shadow: 1px 1.5px 3px gray;
-  margin-right: 100px;
+  margin-right: 75px;
 }
 
 .intro {
