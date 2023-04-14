@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./files/favicon.ico" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
@@ -16,17 +17,37 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg">
-      <a class="navbar-brand" href="#"><img src="./files/Logo.png" alt="" /></a>
+      <a class="navbar-brand" href="#" id="home"
+        ><img src="./files/Logo.png" alt=""
+      /></a>
 
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link" href="">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="">Skills</a></li>
+      <button
+        class="navbar-toggler toggler-example"
+        type="button"
+        data-toggle="collapse"
+        data-target="#hamburgerControl"
+        aria-controls="hamburgerControl"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="hamburger-black"
+          ><img src="./files/hamburger-icon.png" alt="Hamburger Icon"
+        /></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="hamburgerControl">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="#projects">Projects</a>
           </li>
-          <li class="nav-item"><a class="nav-link" href="">Contact</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -47,7 +68,7 @@
     </div>
 
     <div class="container about">
-      <h1>About</h1>
+      <h1 id="about">About</h1>
       <p>
         Hi there! My name is Ulijah Charles I'm a front-end engineer with a
         passion for creating beautiful and intuitive user experiences. I
@@ -75,7 +96,7 @@
       </p>
     </div>
     <div class="container skills">
-      <h1>Skills</h1>
+      <h1 id="skills">Skills</h1>
       <ul class="first-line">
         <li class="first-line-icon">
           <img src="./files/html.png" alt="" />
@@ -139,7 +160,7 @@
       </ul>
     </div>
     <div class="container project">
-      <h1>Projects</h1>
+      <h1 id="projects">Projects</h1>
       <ul class="project-list">
         <li class="project-li">
           <a class="nav-link" href="https://chiho.vercel.app/"
@@ -151,36 +172,40 @@
     </div>
     <section class="contacts">
       <div class="container">
-        <h1>Contact</h1>
-        <form>
+        <h1 id="contact">Contact</h1>
+        <form method="post" action="contact-form-process.php">
           <div class="form-group">
-            <label for="exampleFormControlInput1">Name</label>
+            <label for="Name">Name</label>
             <input
               type="text"
               class="form-control"
-              id="name"
+              id="Name"
+              name="Name"
               placeholder="Name"
             />
           </div>
           <div class="form-group">
-            <label for="exampleFormControlInput1">Email address</label>
+            <label for="Email">Email address</label>
             <input
               type="email"
               class="form-control"
-              id="exampleFormControlInput1"
+              id="Email"
+              name="Email"
               placeholder="name@example.com"
             />
           </div>
           <div class="form-group">
-            <label for="exampleFormControlTextarea1">Message</label>
+            <label for="Message">Message</label>
             <textarea
               class="form-control"
-              id="exampleFormControlTextarea1"
+              id="Message"
+              name="Message"
               rows="6"
+              placeholder="Message"
             ></textarea>
           </div>
           <input type="submit" value="Submit" class="btn btn-light" />
-          <footer>Copyright 2021, All right reserved</footer>
+          <footer>Copyright 2023, All right reserved</footer>
         </form>
       </div>
     </section>
