@@ -134,6 +134,10 @@ footer {
   .project-list {
     flex-direction: column;
   }
+
+  .project-li {
+    margin: 0 auto;
+  }
 }
 @media screen and (max-width: 580px) {
   .profile {
