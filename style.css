@@ -86,10 +86,13 @@ li > p {
 
 .project-list {
   list-style: none;
+  display: flex;
+  flex-direction: row;
 }
 
 .project-li {
   width: 25vh;
+  margin: 0 5%;
 }
 
 .project-link {
@@ -126,6 +129,10 @@ footer {
 
   .nav-link {
     margin-right: 0;
+  }
+
+  .project-list {
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 580px) {
